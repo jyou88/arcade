@@ -10,31 +10,29 @@
 </head>
 
 <body>
-    <div class="boardback">
-        <h1>Tic-Tac-Toe</h1>
-        <table class="board">
-            <div class="container">
-                <tr>
-                    <td class="00"></td>
-                    <td class="01"></td>
-                    <td class="02"></td>
-                </tr>
-                <tr>
-                    <td class="10"></td>
-                    <td class="11"></td>
-                    <td class="12"></td>
-                </tr>
-                <tr>
-                    <td class="20"></td>
-                    <td class="21"></td>
-                    <td class="22"></td>
-                </tr>
-            </div>
-        </table>
-        <div>
+    <main class="background">
+        <section class="title">
+            <h1>Tic-Tac-Toe</h1>
+        </section>
+        <section class="display">
+            Player <span class="display-player playerX">X</span>'s turn
+        </section>
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="display announcer hide"></section>
+        <section class="controls">
             <button id="restartButton">Restart</button>
-        </div>
-    </div>
+        </section>
+    </main>
     <script src="app.js"></script>
 </body>
 
