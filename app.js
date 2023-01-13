@@ -111,4 +111,16 @@ tiles.forEach((tile, index) => {
     tile.addEventListener('click', () => userAction(tile, index));
 });
 
+function setPlayerXName() {
+    const playerXNameDiv = document.getElementById('playerXName');
+    playerXNameDiv.innerHTML = document.getElementById('playerXNameInput').value;
+    document.getElementById('divSetPlayerXName').style.display = 'none';
+}
+
+function setPlayerOName() {
+    const playerONameDiv = document.getElementById('playerOName');
+    playerONameDiv.innerHTML = document.getElementById('playerONameInput').value;
+    document.getElementById('divSetPlayerOName').style.display = 'none';
+}
+
 restartButton.addEventListener('click', resetBoard);

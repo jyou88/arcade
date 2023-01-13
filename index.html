@@ -14,6 +14,20 @@
         <section class="title">
             <h1>Tic-Tac-Toe</h1>
         </section>
+        <section class="Player_Names">
+            Player X name: <span id="playerXName"></span>
+            <span id="divSetPlayerXName">
+                <input type="text" id="playerXNameInput" placeholder="Enter player X name" />
+                <button onclick="setPlayerXName();">Set player X name</button>
+            </span>
+            <div>
+                Player O name: <span id="playerOName"></span>
+                <span id="divSetPlayerOName">
+                    <input type="text" id="playerONameInput" placeholder="Enter player O name" />
+                    <button onclick="setPlayerOName();">Set player O name</button>
+                </span>
+            </div>
+        </section>
         <section class="display">
             Player <span class="display-player playerX">X</span>'s turn
         </section>
